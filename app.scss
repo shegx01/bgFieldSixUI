@@ -37,10 +37,14 @@ body {
         color: #90A1A0;
         font-size: 20px;
         text-transform: capitalize;
+        cursor: pointer;
       }
       &--btn:focus {
         outline: none;
-        box-shadow: 0 1px 2px 8px rgba(0, 0, 0, 0.1);
+        background-color: white;
+      }
+      &--btn:hover {
+        box-shadow: 0 1px 2px 8px rgba(#fff, 0.05);
       }
     }
     &__title {
@@ -80,6 +84,9 @@ body {
             // align-items: center;
             justify-content: center;
           }
+          &--btn:hover {
+            background-color: rgba($color: #28B089, $alpha: .9);
+          }
         }
         &__basic {
           display: flex;
@@ -90,7 +97,7 @@ body {
             color: #28B089;
             position: absolute;
             font-size: large;
-            left: 114px;
+            left: 124px;
           }
         }
       }
@@ -105,10 +112,11 @@ body {
 
 .form {
   &--input {
-    padding: 10px 0;
+    padding: 10px 0 10px 10px;
     width: 100%;
     background-color: transparent;
     border:  1px solid #98A9A7;
+    color: white;
   }
   &--input::placeholder {
     color: #788889;
@@ -120,9 +128,9 @@ body {
     color: #28B089;
     font-size: large;
     position: absolute;
-    left: 148px;
+    left: 158px;
     &--password {
-      left: 155px;
+      left: 164px;
     }
   }
 }

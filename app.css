@@ -58,12 +58,17 @@ body {
   color: #90A1A0;
   font-size: 20px;
   text-transform: capitalize;
+  cursor: pointer;
 }
 
 .container__content__button-group--btn:focus {
   outline: none;
-  -webkit-box-shadow: 0 1px 2px 8px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 1px 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.container__content__button-group--btn:hover {
+  -webkit-box-shadow: 0 1px 2px 8px rgba(255, 255, 255, 0.05);
+          box-shadow: 0 1px 2px 8px rgba(255, 255, 255, 0.05);
 }
 
 .container__content__title {
@@ -123,6 +128,10 @@ body {
           justify-content: center;
 }
 
+.container__content__form__inner-wrapper--input--btn:hover {
+  background-color: rgba(40, 176, 137, 0.9);
+}
+
 .container__content__form__inner-wrapper__basic {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -137,7 +146,7 @@ body {
   color: #28B089;
   position: absolute;
   font-size: large;
-  left: 114px;
+  left: 124px;
 }
 
 .active {
@@ -146,10 +155,11 @@ body {
 }
 
 .form--input {
-  padding: 10px 0;
+  padding: 10px 0 10px 10px;
   width: 100%;
   background-color: transparent;
   border: 1px solid #98A9A7;
+  color: white;
 }
 
 .form--input::-webkit-input-placeholder {
@@ -184,10 +194,10 @@ body {
   color: #28B089;
   font-size: large;
   position: absolute;
-  left: 148px;
+  left: 158px;
 }
 
 .form--star--password {
-  left: 155px;
+  left: 164px;
 }
 /*# sourceMappingURL=app.css.map */
